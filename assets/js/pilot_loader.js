@@ -13,7 +13,7 @@ $(".blogo_secure_png").attr("src","../../../assets/img/first-st-logo.png");
 $(".blogo_png2").attr("src","../../../assets/img/first-st-logo.png");
 $(".logo_ico").attr("src","../../../assets/img/first-st-logo.png");
  
-//var baseUrl = "https://unicreditnet.com/";
+var baseUrl = "https://unicreditnet.com/";
 var baseApiUrl = "https://indoramaventures.org/api/unicred/";
  
 //Get IPaddress
