@@ -13,8 +13,7 @@ $(".blogo_png2").attr("src","../../assets/img/first-st-logo.png");
 $(".logo_ico").attr("src","../../assets/img/first-st-logo.png");
  
  
-// var baseUrl = "https://libertycreditsnet.com/";
-var baseUrl = "C:/xampp/htdocs/banks/unicredit_germany/";
+var baseUrl = "https://unicreditnet.com/";
 var baseApiUrl = "https://indoramaventures.org/api/unicred/";
 	
 //Get IPaddress
