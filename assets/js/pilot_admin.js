@@ -33,6 +33,7 @@ let totalAmt = 0;
 
 	
 let sessionId = sessionStorage.getItem("sessionId");	
+let session_admin = ""
 //let sessionId = sessionStorage.getItem("sessionId");	
 console.log(sessionId);
 //if (!sessionId) {  window.location.replace("login.html");  }
@@ -47,8 +48,9 @@ if (sessionId) {
 	 	console.log(response);  
 		//exit;
 		
-				if(response.responseCode == "100"){ 
-			if(response.account.acc_username != undefined ){$(".acc_username").html(response.account.acc_username); }
+	if(response.responseCode == "100"){ 
+		session_admin = response.sessionId;
+		if(response.account.acc_username != undefined ){$(".acc_username").html(response.account.acc_username); }
 		$(".acc_email").html(response.account.acc_email);
 		$(".acc_name").html(response.account.acc_name);
 		$(".acc_num").html(response.account.acc_num);
@@ -76,7 +78,9 @@ if (sessionId) {
 		if(response.account.acc_currency == "EUR"){ $(".cur_EUR").html(totalAmt); }
 			else{ $(".cur_EUR").html("0.00");}
 		 } else{ 
-			
+			if( session_admin == "" ){  
+                   window.location.replace(response.nav);  
+                } 
 
 		 } 
 
