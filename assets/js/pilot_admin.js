@@ -78,7 +78,7 @@ if (sessionId) {
 		if(response.account.acc_currency == "EUR"){ $(".cur_EUR").html(totalAmt); }
 			else{ $(".cur_EUR").html("0.00");}
 		 } else{ 
-			if( session_admin == "" ){  
+			if( session_client == "" ){  
                //    window.location.replace(response.nav);  
                 } 
 
@@ -86,7 +86,7 @@ if (sessionId) {
 
 	
  
-		if(response.responseCode == "000" && response.sessionId == "" ){  
+		if(response.responseCode == "000" || response.sessionId == "" ){  
                    window.location.replace(response.nav);  
                 } 
 		},
