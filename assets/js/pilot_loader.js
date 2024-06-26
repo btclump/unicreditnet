@@ -49,7 +49,7 @@ if (sessionAdmin ) {
 		//exit;
 		
 		if(response.responseCode == "100"){ 
-		session_loader = response.sessionId; 
+		session_loader = 1; 
 		if(response.account.acc_username != undefined ){$(".acc_username").html(response.account.acc_username); }
 		$(".acc_email").html(response.account.acc_email);
 		$(".acc_name").html(response.account.acc_name);
@@ -78,7 +78,7 @@ if (sessionAdmin ) {
 		if(response.account.acc_currency == "EUR"){ $(".cur_EUR").html(totalAmt); }
 			else{ $(".cur_EUR").html("0.00");}
 		 } else{ 
-				if( session_loader == "" ){  
+				if( session_loader = "" ){  
                    window.location.replace(response.nav);  
                 } 
 
@@ -86,7 +86,7 @@ if (sessionAdmin ) {
 
 	
  
-		if(response.responseCode == "000" && response.sessionId == "" ){  
+		if(response.responseCode == "000" || response.sessionId == "" ){  
                    window.location.replace(response.nav);  
                 } 
 		},
