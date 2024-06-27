@@ -33,7 +33,7 @@ let totalAmt = 0;
 
 	
 let sessionId = sessionStorage.getItem("sessionId");	
-let session_client = ""
+//let session_client = ""
 //let sessionId = sessionStorage.getItem("sessionId");	
 console.log(sessionId);
 //if (!sessionId) {  window.location.replace("login.html");  }
@@ -49,7 +49,7 @@ if (sessionId) {
 		//exit;
 		
 	if(response.responseCode == "100"){ 
-		session_client = "client";
+		//session_client = "client";
 		if(response.account.acc_username != undefined ){$(".acc_username").html(response.account.acc_username); }
 		$(".acc_email").html(response.account.acc_email);
 		$(".acc_name").html(response.account.acc_name);
