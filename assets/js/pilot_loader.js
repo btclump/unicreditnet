@@ -2,7 +2,7 @@ $(".bname").html("UniCredit");
 $(".copyright").html("2024 UniCredit | All right reserved.");
 $(".bphone").html("+44 782 215 914");
 $(".bphone2").html("+44 782 215 915");
-$(".bemail").html("contact@unicreditnet.com");
+$(".bemail").html("care@unicreditnet.com");
 $(".bwebsite").html("www.unicreditnet.com");  
 $(".baddress").html("Arabellastrasse 13, Munich, Bayern, 81925"); 
 $(".bcountry").html("Germany"); 
