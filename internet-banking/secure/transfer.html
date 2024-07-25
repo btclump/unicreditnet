@@ -519,9 +519,9 @@
  <div class="form-group">
  <div class="col-md-9"><label class="control-label">Account Number</label><input type="text" class="form-control" name="acc_num"  id="acc_num"  placeholder="Enter Receiver's Account Number" required></div></div>
  
- <div class="form-group">
+<!-- <div class="form-group">
  <div class="col-md-9"><label class="  control-label">IBAN</label><input type="text" class="form-control" name="acc_iban"  id="acc_iban"  placeholder="Enter Receiver's IBAN"></div></div>
- 
+ -->
  <div class="form-group">
  <div class="col-md-9"><label class="  control-label">Routing Number/Routing Code</label><input type="text" class="form-control"  id="acc_routingnumber" name="acc_routingnumber"  placeholder="Enter Routing Number OR Routing Code"></div></div>
   
@@ -674,7 +674,8 @@ var acc_name=$("#acc_name").val();
 var acc_num=$("#acc_num").val();
 var bankname=$("#bankname").val();
 var acc_bankaddr=$("#acc_bankaddr").val();
-var acc_iban=$("#acc_iban").val();
+//var acc_iban=$("#acc_iban").val();
+var acc_iban=$("");
 var acc_routingnumber=$("#acc_routingnumber").val();
 var acc_swift_bic=$("#acc_swift_bic").val();
 var cbpr2=$("#cbpr2").val();
